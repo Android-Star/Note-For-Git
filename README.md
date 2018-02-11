@@ -11,15 +11,15 @@
 
 
 #### 添加文件到Git仓库，分两步：
-* 第一步，使用命令$ git add <fileName>，注意，可反复多次使用，添加多个文件；
+* 第一步，使用命令$ git add [fileName]，注意，可反复多次使用，添加多个文件；
 * 第二步，使用命令$ git commit，完成。
 
 #### 常用命令
-* $ git add <fileName>
+* $ git add [fileName]
 * $ git commit -m "message"  （引号中填写提交信息）
 * $ git status  查看仓库当前的状态
-* $ git diff <fileName> 查看difference
-* $ git diff HEAD -- <fileName>  查看工作区和版本库里面指定文件区别
+* $ git diff [fileName] 查看difference
+* $ git diff HEAD -- [fileName]  查看工作区和版本库里面指定文件区别
   ##### 如果$ git status告诉你有文件被修改过，用$git diff可以查看具体修改内容。
 
  -----------------------------------------------------------------------------
@@ -48,9 +48,9 @@
  ### 撤销修改
  
  #### 常用命令
- * $ git checkout -- <fileName>  丢弃工作区的修改(此时文件还没被添加到暂存区)：
+ * $ git checkout -- [fileName]  丢弃工作区的修改(此时文件还没被添加到暂存区)：
    ###### 命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令。
- * $ git reset HEAD <fileName>  丢弃暂存区的修改,回到工作区状态
+ * $ git reset HEAD [fileName]  丢弃暂存区的修改,回到工作区状态
 
  #### 小结
  * 场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file。
