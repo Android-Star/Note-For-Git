@@ -142,6 +142,8 @@ $ git clone ssh/https地址  克隆一个本地库
   ##### 修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；
 
   ##### 当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后，再git stash pop，回到工作现场。
+  
+  ##### 重点：假如误删了stash内容 可以通过git fsck --no-reflog | awk '/dangling commit/ {print $3}'（mac）；git fsck --no-reflog | select-string 'dangling commit' | foreach { $bits = $_ -split ' '; echo $bits[2];}（windows）来列出stash列表  然后通过$git show 命令查看stash内容再通过git  stash apply即可
 
 -------------------------------------------------------------------
 ### 删除分支
