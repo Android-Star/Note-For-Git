@@ -33,6 +33,7 @@
  #### 常用命令
  * $ git log  显示从最近到最远的提交日志
  * $ git log --pretty=oneline  单行显示信息
+ * $ git reflog  显示历史命令信息
  * $ git reset --hard HEAD^  把当前版本回退到上一个版本
 
 
