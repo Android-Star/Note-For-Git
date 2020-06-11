@@ -18,8 +18,9 @@
 * $ git add [fileName]
 * $ git commit -m "message"  （引号中填写提交信息）
 * $ git status  查看仓库当前的状态
-* $ git diff [fileName] 查看difference
+* $ git diff [fileName] 查看工作区和暂存区difference
 * $ git diff HEAD -- [fileName]  查看工作区和版本库里面指定文件区别
+* $ git diff --cached -- [fileName]  查看暂存区和版本库里面指定文件区别
   ##### 如果$ git status告诉你有文件被修改过，用$git diff可以查看具体修改内容。
 
  -----------------------------------------------------------------------------
