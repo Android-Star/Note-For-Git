@@ -146,6 +146,10 @@ $ git clone ssh/https地址  克隆一个本地库
   ##### 当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后，再git stash pop，回到工作现场。
   
   ##### 重点：假如误删了stash内容 可以通过git fsck --no-reflog | awk '/dangling commit/ {print $3}'（mac）；git fsck --no-reflog | select-string 'dangling commit' | foreach { $bits = $_ -split ' '; echo $bits[2];}（windows）来列出stash列表  然后通过$git show 命令查看stash内容再通过git  stash apply即可
+  
+  ##### 当修改的bug也需要往当前工作的分支合并一份的时候，git提供了单独复制一个特定commit的内容到当前分支的命令cherry-pick：
+  
+ * $ git cherry-pick [commitId]
 
 -------------------------------------------------------------------
 ### 删除分支
