@@ -173,7 +173,7 @@ $ git clone ssh/https地址  克隆一个本地库
  * 3.如果合并有冲突，则解决冲突，并在本地提交；
 
  * 4.没有冲突或者解决掉冲突后，再用git push origin branch-name推送就能成功！
- ##### 如果git pull提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream-to=origin/branch-name branch-name。
+ ##### 如果git pull提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream-to origin/branch-name branch-name。
 
  #### 小结
  * 查看远程库信息，使用git remote -v；
