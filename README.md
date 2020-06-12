@@ -94,10 +94,10 @@ $ git clone ssh/https地址  克隆一个本地库
 ### 分支管理
  #### 常用命令
  * $ git branch  查看当前分支
- * $ git checkout -b 【分支名称】 创建并切换新分支，-b参数表示创建并切换
+ * $ git checkout -b 【分支名称】 创建并切换新分支，-b参数表示创建并切换 或者git switch -c [分支名称]
    ##### git checkout命令加上-b参数表示创建并切换，相当于以下两条命令
  * $ git branch 【分支名称】
- * $ git checkout 【分支名称】
+ * $ git checkout 【分支名称】 或者git switch 【分支名称】
  * $ git merge【分支名称】 合并指定分支到当前分支
 
    ##### 合并分支时候，如果可能，Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。
