@@ -191,17 +191,17 @@ $ git clone ssh/https地址  克隆一个本地库
  ##### tag就是一个让人容易记住的有意义的名字，它跟某个commit绑在一起。
  #### 常用命令
  * 查看所有标签：$ git tag
- * 打标签：$ git tag <name>
- * 查看标签信息：$ git show <tagname>
- * 创建带有说明的标签，用-a指定标签名，-m指定说明文字 $ git tag -a <name> -m "msg" <commitId>
+ * 打标签：$ git tag 标签名
+ * 查看标签信息：$ git show 标签名
+ * 创建带有说明的标签，用-a指定标签名，-m指定说明文字 $ git tag -a 标签名 -m "msg" commitId
  ##### 默认标签是打在最新提交的commit上的。有时候，如果忘了打标签，比如，现在已经是周五了，但应该在周一打的标签没有打，怎么办？方法是找到历史提交的commit id，然后打上就可以了：
  * 查看历史提交版本：$ git log --pretty=oneline --abbrev-commit
- * 对某次提交打tag：$ git tag <name> <commitId>
+ * 对某次提交打tag：$ git tag 标签名 commitId
  ##### 注意，标签不是按时间顺序列出，而是按字母排序的。
 
  #### 小结
- * 命令git tag <name>用于新建一个标签，默认为HEAD，也可以指定一个commit id；
- * git tag -a <tagname> -m "blablabla..."可以指定标签信息；
+ * 命令git tag 标签名 用于新建一个标签，默认为HEAD，也可以指定一个commit id；
+ * git tag -a tagname -m "blablabla..."可以指定标签信息；
  * 命令git tag可以查看所有标签。
 
 
