@@ -174,6 +174,7 @@ $ git clone ssh/https地址  克隆一个本地库
 
  * 4.没有冲突或者解决掉冲突后，再用git push origin branch-name推送就能成功！
  ##### 如果git pull提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream-to origin/branch-name branch-name。
+ ##### 在处理冲突时候，如果要直接使用当前分支过着合并过来的分支内容可以使用git checkout 文件名 –-theirs/--ours快速处理，这种方式很容易处理二进制文件冲突
  ##### 在处理完冲突后push之前添加git rebase命令，可以把提交线上的分叉变成直线，让提交记录美观
 
  #### 小结
