@@ -211,7 +211,7 @@ $ git clone ssh/https地址  克隆一个本地库
  #### 常用命令
  * 删除标签：$ git tag -d <标签名字>
    ##### 因为创建的标签都只存储在本地，不会自动推送到远程。所以，打错的标签可以在本地安全删除。
- * 推送某个标签到远程  $ git push origin <tagname>
+ * 推送某个标签到远程  $ git push origin <标签名字>
 
  * 推送全部尚未推送到远程的本地标签  $ git push origin --tags
 
@@ -220,10 +220,10 @@ $ git clone ssh/https地址  克隆一个本地库
  * 2.从远程删除:  $ git push origin :refs/tags/<标签名字>
 
  #### 小结
- * 命令git push origin <tagname>可以推送一个本地标签；
+ * 命令git push origin <标签名字>可以推送一个本地标签；
  * 命令git push origin --tags可以推送全部未推送过的本地标签；
- * 命令git tag -d <tagname>可以删除一个本地标签；
- * 命令git push origin :refs/tags/<tagname>可以删除一个远程标签。
+ * 命令git tag -d <标签名字>可以删除一个本地标签；
+ * 命令git push origin :refs/tags/<标签名字>可以删除一个远程标签。
 
 
 
