@@ -106,7 +106,8 @@ $ git clone ssh/https地址  克隆一个本地库
  * $ git merge --no-ff -m "【msg】"【分支名称】
    ##### 请注意--no-ff参数，表示禁用Fast forward,因为本次合并要创建一个新的commit，所以加上-m参数，把commit描述写进去。
 
- * $ git branch -d【分支名称】  删除分支
+ * $ git branch -d【分支名称】  删除本地分支
+ * $ git push origin --delete 分支名字  删除远程分支
 
  #### 小结
   ##### Git鼓励大量使用分支：
